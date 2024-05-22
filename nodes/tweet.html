@@ -1,0 +1,42 @@
+<script type="text/javascript">
+  RED.nodes.registerType('tweet', {
+    category: 'Twitter',
+    color: '#C0DEED',
+    defaults: {
+      name: { value: "" },
+      browserlessConnection: { value: "browserless:3000" }
+    },
+    inputs: 1,
+    outputs: 0,
+    icon: "twitter.png",
+    align: 'right',
+    label: function () {
+      return this.name || "tweet";
+    },
+    credentials: {
+      authToken: {
+        type: "password",
+        required: true
+      }
+    }
+  });
+</script>
+
+<script type="text/html" data-template-name="tweet">
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+  <div class="form-row">
+    <label for="node-input-authToken"><i class="fa fa-key"></i> Auth Token</label>
+    <input type="password" id="node-input-authToken">
+  </div>
+  <div class="form-row">
+    <label for="node-input-browserlessConnection"><i class="fa fa-chrome"></i> Browserless connection</label>
+    <input type="text" id="node-input-browserlessConnection">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="tweet">
+  <p>Node to impersonate a twitter account and post a tweet.</p>
+</script>
