@@ -28,7 +28,7 @@ Add a node to a flow and configure the `auth_token`, as well as the connection t
 
 ### Direct Message
 
-- `msg.payload` will be used as a message and user IDs can be supplied as an array:
+- `msg.payload` will be used as a message and user IDs can be supplied as an array in `msg.users`:
 ```json
-msg.users = ["anachronisdev"]
+[ "anachronisdev", "nodejs" ]
 ```  
