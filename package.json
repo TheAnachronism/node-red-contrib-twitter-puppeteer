@@ -8,7 +8,8 @@
   "node-red": {
     "nodes": {
       "tweet": "nodes/tweet.js",
-      "directMessage": "nodes/directMessage.js"
+      "directMessage": "nodes/directMessage.js",
+      "browserless": "nodes/browserless.js"
     }
   },
   "dependencies": {
