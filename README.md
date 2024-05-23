@@ -32,3 +32,8 @@ Add a node to a flow and configure the `auth_token`, as well as the connection t
 ```json
 [ "anachronisdev", "nodejs" ]
 ```  
+
+## Puppeteer version
+
+> [!IMPORTANT]  
+> As the currenly stable version of the node-red container uses *node version 16*, an older version of `puppeteer` is used that is still fully compatible with node version `16`.
