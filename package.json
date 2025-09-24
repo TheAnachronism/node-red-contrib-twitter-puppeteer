@@ -13,6 +13,6 @@
     }
   },
   "dependencies": {
-    "puppeteer": "^19.2.2"
+    "puppeteer": "^24.22.3"
   }
 }
